@@ -47,7 +47,7 @@
                 <input type="submit" class="btn btn-primary btn-block" value="Login">
             </div>        
         </form>
-        <p class="text-center"><a href="signup.html">Create an Account</a></p>
+        <p class="text-center"><a href="signup.php">Create an Account</a></p>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
