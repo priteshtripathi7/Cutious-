@@ -1,5 +1,8 @@
-const signupform = document.querySelector("#signup-form");
+auth.onAuthStateChanged(user => {
+    console.log(user);
+})
 
+const signupform = document.querySelector("#signup-form");
 signupform.addEventListener('submit', (e) => {
     e.preventDefault();
     let email = signupform['signup-email'].value;
@@ -7,19 +10,10 @@ signupform.addEventListener('submit', (e) => {
 
     // signup the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
-        console.log(cred);
+        console.log(cred.user);
     })
     .catch(() => {
         alert('Email already in use...!!');
         signupform['signup-email'].focus();
     })
 })
-
-// const logout = document.querySelector('#logout');
-
-// logout.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     auth.signOut().then(() => {
-//         console.log("Log out");
-//     })
-// })
