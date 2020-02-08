@@ -18,9 +18,10 @@ signupform.addEventListener('submit', (e) => {
         let errorMssg = error.message;
         if (errorCode == 'auth/weak-password') {
             alert('The password is too weak.');
+            signupform['signup-password'].focus();
         } else {
             alert(errorMssg);
+            signupform['signup-email'].focus();
         }
-        signupform['signup-email'].focus();
     })
 })

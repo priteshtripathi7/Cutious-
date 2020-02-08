@@ -17,9 +17,10 @@
     </div>
     <div class="form-row text-center">
         <div class="col-12">
-            <button type="button" class="btn btn-info">Find Route
+            <button type="button" class="btn btn-info" onclick="reDirectTo()">Find Route
             </button>
         </div>
      </div>
+     <script src="index.js"></script>
 </body>
 </html>
