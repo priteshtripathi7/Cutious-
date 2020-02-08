@@ -63,7 +63,7 @@
     <source src="./High Frequency.mp3" type="audio/mpeg">
 </audio>
 
-<button  id="sos" ondblclick="playMusic()">DISTRESS CALL</button>
+<button  id="sos" >DISTRESS CALL</button>
  
     
 <script>
@@ -232,6 +232,7 @@ let points= [[21.1419, 72.84  ], //police station data
             // add the route to the map
             let ans = dist(steps,coords,distance,duration,points);
             addRoute(ans);
+            console.log(ans);
             // addRoute(coords);
             // console.log(coords['coordinates'][0][0]);
 
