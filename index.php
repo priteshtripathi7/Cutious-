@@ -33,7 +33,9 @@
 </style>
 </head>
 <body>
-    <h1 class="display-1 text-center">Cautious</h1>
+    <div class="jumbotron">
+        <h1 class="display-1 text-center">Cautious</h1>
+    </div>
     <div class="login-form">
         <form id="login-form">
             <h2 class="text-center">Log in</h2>       

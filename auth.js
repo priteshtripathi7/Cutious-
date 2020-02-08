@@ -11,6 +11,7 @@ signupform.addEventListener('submit', (e) => {
     // signup the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         console.log(cred.user);
+        location.href = 'main.php';
     })
     .catch(() => {
         alert('Email already in use...!!');

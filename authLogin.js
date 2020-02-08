@@ -8,7 +8,7 @@ login.addEventListener('submit', (e) => {
 
     // login the user
     auth.signInWithEmailAndPassword(email, password).then(cred => {
-        console.group(cred.user);
+        location.href = 'main.php';
     })
     .catch(() => {
         alert("Wrong credentials!!!");
