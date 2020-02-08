@@ -7,10 +7,16 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
 
+    
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.0/mapbox-gl-draw.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.0/mapbox-gl-draw.css' type='text/css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; height: 70%}
@@ -18,46 +24,56 @@
 </head>
 <body>
 <style>
-    .geocoder {
-        height: 100px;
-        width: 150px;
-        position: absolute;
-        top: 20px;
-        left: 10px;
-        background-color: rgba(255, 255, 255, .9);
-        padding: 15px;
-        text-align: left;
-        font-family: 'Arial';
-        margin: 0;
-        font-size: 13px;
-    }
+    
     #instructions {
         position:absolute;
-        height: 50px;
-        margin:20px;
-        width: 25%;
-        top:0;
+        height: 150px;
+        width: 23%;
+        top:45px;
         bottom:0;
-        padding: 20px;
         background-color: rgba(255,255,255,0.9);
         overflow-y: scroll;
         font-family: sans-serif;
     }
-
+    #sos{
+        background-color: red;
+        border: none;
+        z-index: 100;
+        margin-left: 45%;
+        text-align: center; 
+        position: absolute; 
+        top: 80%; 
+        height: 80px; 
+        width: 200px; 
+        font-size: 20px; 
+        border-radius: 5%;
+    }
 </style>
 
 <!--  the map -->
-<div id='map'></div>
+<div id='map' style="height: 100%;"></div>
 <!-- geocoder search input -->
-<div class="geocoder">
-    <div id="geocoder" ></div>
-</div>
+
+    <div id="geocoder" style="left: ;"></div>
 <!-- left side instructions -->
 <div id='instructions'>
     <div id="calculated-line"></div>
 </div>
+<audio id="playing">
+    <source src="./High Frequency.mp3" type="audio/mpeg">
+</audio>
 
-
+<button  id="sos" ondblclick="playMusic()">DISTRESS CALL</button>
+ 
+    
+<script>
+    let sos = document.querySelector("#sos");
+    sos.addEventListener('dblclick', () => {
+        let mus = document.querySelector('#playing');
+        mus.play();
+    });
+    
+</script>
 <script>
 
 let points= [[21.1419, 72.84  ], //police station data
@@ -217,6 +233,7 @@ let points= [[21.1419, 72.84  ], //police station data
             // add the route to the map
             let ans = dist(steps,coords,distance,duration,points);
             addRoute(ans);
+            console.log(ans);
             // addRoute(coords);
             // console.log(coords['coordinates'][0][0]);
 
@@ -247,7 +264,7 @@ let points= [[21.1419, 72.84  ], //police station data
                     "line-cap": "round"
                 },
                 "paint": {
-                    "line-color": "#1db7dd",
+                    "line-color": "#f00",
                     "line-width": 8,
                     "line-opacity": 0.8
                 }
