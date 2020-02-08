@@ -13,8 +13,14 @@ signupform.addEventListener('submit', (e) => {
         console.log(cred.user);
         location.href = 'main.php';
     })
-    .catch(() => {
-        alert('Email already in use...!!');
+    .catch((error) => {
+        let errorCode = error.code;
+        let errorMssg = error.message;
+        if (errorCode == 'auth/weak-password') {
+            alert('The password is too weak.');
+        } else {
+            alert(errorMssg);
+        }
         signupform['signup-email'].focus();
     })
 })
