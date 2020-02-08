@@ -35,19 +35,19 @@
 <body>
     <h1 class="display-1 text-center">Cautious</h1>
     <div class="login-form">
-        <form id="login-form">
-            <h2 class="text-center">Log in</h2>       
+        <form id="signup-form">
+            <h2 class="text-center">Signup</h2>       
             <div class="form-group">
-                <input type="text" id="login-email" class="form-control" placeholder="Email" required="required">
+                <input type="text" id="signup-email" class="form-control" placeholder="Email" required="required">
             </div>
             <div class="form-group">
-                <input type="password" id="login-password" class="form-control" placeholder="Password" required="required">
+                <input type="password" id="signup-password" class="form-control" placeholder="Password" required="required">
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                <input type="submit" class="btn btn-primary btn-block" value="Signup">
             </div>        
         </form>
-        <p class="text-center"><a href="signup.html">Create an Account</a></p>
+        <p class="text-center"><a href="index.html">Already have an account?</a></p>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
@@ -75,7 +75,7 @@
     const auth = firebase.auth();
     </script>
 
-    <script src="./authLogin.js"></script>
+    <script src="./auth.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>                                		                            
