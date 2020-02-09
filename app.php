@@ -131,8 +131,8 @@
                     var yourMessage = "Your friend is in trouble..."
 
                     function getLinkWhastapp(number, message) {
-                        number = this.yourNumber;
-                        message = this.yourMessage.split(' ').join('%20')
+                        number = yourNumber;
+                        message = yourMessage.split(' ').join('%20')
                         return console.log('whatsapp://send?phone=' + number + '&text=%20' + message)
                     }
                     getLinkWhastapp()
