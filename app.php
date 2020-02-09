@@ -126,14 +126,13 @@
             let docRef = db.collection("users").doc(user.uid);
             docRef.get().then(function(doc) {
                 if (doc.exists) {
-                    var yourNumber = "9182851798";
+                    var yourNumber = doc.data().emergency;
                     console.log(yourNumber);
                     var yourMessage = "Your friend is in trouble..."
 
                     function getLinkWhastapp(number, message) {
                         number = this.yourNumber;
                         message = this.yourMessage.split(' ').join('%20')
-                        
                         return console.log('whatsapp://send?phone=' + number + '&text=%20' + message)
                     }
                     getLinkWhastapp()
