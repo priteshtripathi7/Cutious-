@@ -1,7 +1,3 @@
-auth.onAuthStateChanged(user => {
-    console.log(user);
-})
-
 const signupform = document.querySelector("#signup-form");
 signupform.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -10,7 +6,10 @@ signupform.addEventListener('submit', (e) => {
 
     // signup the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
-        console.log(cred.user);
+        return db.collection('users').doc(cred.user.uid).set({
+            emergency: signupform['signup-number'].value
+        })
+    }).then(() => {
         location.href = 'main.php';
     })
     .catch((error) => {
