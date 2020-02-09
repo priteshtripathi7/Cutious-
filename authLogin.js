@@ -1,8 +1,8 @@
-auth.onAuthStateChanged(user => {
-    if(user){
-        location.href = 'main.php';
-    }
-})
+// auth.onAuthStateChanged(user => {
+//     if(user){
+//         location.href = 'main.php';
+//     }
+// })
 const login = document.querySelector("#login-form");
 
 login.addEventListener('submit', (e) => {
