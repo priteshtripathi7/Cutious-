@@ -133,8 +133,8 @@
                     function getLinkWhastapp(number, message) {
                         number = this.yourNumber;
                         message = this.yourMessage.split(' ').join('%20')
-
-                        return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
+                        
+                        return console.log('whatsapp://send?phone=' + number + '&text=%20' + message)
                     }
                     getLinkWhastapp()
                 } else {
