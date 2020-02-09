@@ -63,7 +63,7 @@
     <source src="./High Frequency.mp3" type="audio/mpeg">
 </audio>
 
-<button  id="sos" ondblclick="playMusic()">DISTRESS CALL</button>
+<button  id="sos">DISTRESS CALL</button>
  
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
