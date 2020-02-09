@@ -107,7 +107,7 @@
                     var yourMessage = "Your friend is in trouble..."
 
                     function getLinkWhastapp(number, message) {
-                        number = yourNumber;
+                        number = yourNumber.emergency;
                         message = yourMessage.split(' ').join('%20')
 
                         return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
