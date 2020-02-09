@@ -102,13 +102,13 @@
             let docRef = db.collection("users").doc(user.uid);
             docRef.get().then(function(doc) {
                 if (doc.exists) {
-                    var yourNumber = doc.data();
+                    var yourNumber = "9182851798";
                     console.log(yourNumber);
                     var yourMessage = "Your friend is in trouble..."
 
                     function getLinkWhastapp(number, message) {
-                        number = yourNumber.emergency;
-                        message = yourMessage.split(' ').join('%20')
+                        number = this.yourNumber;
+                        message = this.yourMessage.split(' ').join('%20')
 
                         return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
                     }
