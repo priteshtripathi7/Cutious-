@@ -26,7 +26,7 @@
             </div>
         </div>
         
-        <button class="text-center btn btn-success" onclick="backToMain()">Submit</button>
+        <button type="button" class="text-center btn btn-success" onclick="backToMain()">Submit</button>
     </form>
     <script src="./index.js"></script>
 </body>
