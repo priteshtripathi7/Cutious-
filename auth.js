@@ -1,3 +1,8 @@
+auth.onAuthStateChanged(user => {
+    if(user){
+        location.href = 'main.php';
+    }
+})
 const signupform = document.querySelector("#signup-form");
 signupform.addEventListener('submit', (e) => {
     e.preventDefault();
