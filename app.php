@@ -103,10 +103,11 @@
             docRef.get().then(function(doc) {
                 if (doc.exists) {
                     var yourNumber = doc.data();
+                    console.log(yourNumber);
                     var yourMessage = "Your friend is in trouble..."
 
                     function getLinkWhastapp(number, message) {
-                        number = yourNumber
+                        number = yourNumber;
                         message = yourMessage.split(' ').join('%20')
 
                         return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
