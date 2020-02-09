@@ -44,8 +44,8 @@
         text-align: center; 
         position: absolute; 
         top: 80%; 
-        height: 8%; 
-        width: 15%; 
+        height: 10%; 
+        width: 25%; 
         font-size: 100%; 
         border-radius: 5%;
     }
@@ -57,8 +57,8 @@
         text-align: center; 
         position: absolute; 
         top: 80%; 
-        height: 8%; 
-        width: 15%; 
+        height: 10%; 
+        width: 25%; 
         font-size: 100%; 
         border-radius: 5%;
     }
