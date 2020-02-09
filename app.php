@@ -133,7 +133,7 @@
                     function getLinkWhastapp(number, message) {
                         number = yourNumber;
                         message = yourMessage.split(' ').join('%20')
-                        return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
+                        return console.log('whatsapp://send?phone=' + number + '&text=%20' + message)
                     }
                     getLinkWhastapp()
                 } else {
@@ -195,7 +195,7 @@ let points= [[21.1419, 72.84  ], //police station data
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v9', //hosted style id
-        center: [21.1643,72.7841], // starting position
+        center: [72.7841,21.1643], // starting position
         zoom: 13, // starting zoom
         minZoom: 11 // keep it local
     });
