@@ -15,8 +15,24 @@ img{
 h1{
     padding-top: 5%;
     font-family: 'Gotu', sans-serif;
-    font-size: 8vw; 
+    font-size: 10vh; 
     color: whitesmoke;
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    h1 {
+        font-size: 8vw; 
+    }
+
+}
+  
+@media only screen and (min-width: 768px) {
+    /* For Desktop: */
+    h1 {
+        font-size: 8vw; 
+    }
 }
 
 .login-form {

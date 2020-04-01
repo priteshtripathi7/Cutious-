@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Simple Login Form</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<style type="text/css">
-	.login-form {
-		width: 340px;
-    	margin: 50px auto;
-	}
-    .login-form form {
-    	margin-bottom: 15px;
-        background: #f7f7f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-    .login-form h2 {
-        margin: 0 0 15px;
-    }
-    .form-control, .btn {
-        min-height: 38px;
-        border-radius: 2px;
-    }
-    .btn {        
-        font-size: 15px;
-        font-weight: bold;
-    }
-</style>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Simple Login Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="./css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Gotu&display=swap" rel="stylesheet">
+        
+        
+    </head>
 <body>
-    <div class="jumbotron">
-        <h1 class="display-1 text-center">Cautious</h1>
+    <div class="backGround">
+        <img src="./img/signup.jpg">
     </div>
+
+    <h1 class="display-1 text-center">Cautious</h1>
+
     <div class="login-form">
         <form id="signup-form">
-            <h2 class="text-center">Signup</h2>       
+            <h2 class="text-center" style="color: whitesmoke;">Signup</h2>       
             <div class="form-group">
                 <input type="email" id="signup-email" class="form-control" placeholder="Email" required>
             </div>
@@ -52,7 +36,7 @@
                 <input type="submit" class="btn btn-primary btn-block" value="Signup">
             </div>        
         </form>
-        <p class="text-center"><a href="index.php">Already have an account?</a></p>
+        <p class="text-center" style="font-size: 20px;"><a href="index.php"><b>Already have an account?</b></a></p>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
