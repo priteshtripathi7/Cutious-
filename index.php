@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        <link rel="stylesheet" href="./../css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Gotu&display=swap" rel="stylesheet">
     </head>
 <body>
     <div class="backGround">
-        <img src="./../img/index(2).jpg">
+        <img src="./img/index(2).jpg">
     </div>
 
     <h1 class="display-1 text-center">Cautious</h1>
@@ -60,7 +60,7 @@
     const auth = firebase.auth();
     </script>
 
-    <script src="./../js/authLogin.js"></script>
-    <script src="./../js/index.js"></script>
+    <script src="./js/authLogin.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>                                		                            

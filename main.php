@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <title>Webapp</title>
-    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Gotu&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,6 +22,6 @@
             </button>
         </div>
      </div>
-     <script src="./../js/index.js"></script>
+     <script src="./js/index.js"></script>
 </body>
 </html>
