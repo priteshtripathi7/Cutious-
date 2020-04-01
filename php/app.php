@@ -74,7 +74,7 @@
     <div id="calculated-line"></div>
 </div>
 <audio id="playing">
-    <source src="./High Frequency.mp3" type="audio/mpeg">
+    <source src="./../media/High Frequency.mp3" type="audio/mpeg">
 </audio>
 
 <div class="container">
