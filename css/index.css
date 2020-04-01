@@ -1,0 +1,42 @@
+.backGround {
+    top: 0;
+    z-index: -10;
+    position: absolute;
+    background: black;
+    overflow: hidden;
+}
+
+img{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.4;
+}
+
+h1{
+    padding-top: 5%;
+    font-family: 'Gotu', sans-serif;
+    font-size: 8vw; 
+    color: whitesmoke;
+}
+
+.login-form {
+    font-family: 'Comic Neue', cursive;
+    width: 310px;
+    margin: 50px auto;
+}
+.login-form form {
+    margin-bottom: 15px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 1);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
