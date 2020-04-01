@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="backGround">
-        <img src="./img/index(2).jpg">
+        <img src="./img/find.jpg">
     </div>
 
     <h1 class="display-1 text-center">Cautious</h1>
