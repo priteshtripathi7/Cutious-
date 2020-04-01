@@ -95,16 +95,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
 
 <script>
-    var firebaseConfig = {
-        apiKey: "AIzaSyD9lJGvpzFYY3ctmcRGdLdJaAhNdAyhS5M",
-        authDomain: "cautious-8b6e4.firebaseapp.com",
-        databaseURL: "https://cautious-8b6e4.firebaseio.com",
-        projectId: "cautious-8b6e4",
-        storageBucket: "cautious-8b6e4.appspot.com",
-        messagingSenderId: "190211129776",
-        appId: "1:190211129776:web:243827c2f4a21f6a17d675",
-        measurementId: "G-33CJ4B6B1X"
-    };
+    import firebaseConfig from './config.js';
+    
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
